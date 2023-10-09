@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identify</title>
+    <style>
+  .center {
+  height:100%;  
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+
+}
+.form-input {
+  width:350px;
+  padding:20px;
+  background:#fff;
+  box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
+              3px 3px 7px rgba(94, 104, 121, 0.377);
+}
+.form-input img {
+  width:100%;
+  display:none;
+  margin-bottom:30px;
+}
+
+.form-input input {
+  display:none;
+}
+
+.form-input label {
+  display:block;
+  width:45%;
+  height:45px;
+  margin-left: 25%;
+  line-height:50px;
+  text-align:center;
+  background:#0b863f;
+  color:#fff;
+  font-size:15px;
+  font-family:"Open Sans",sans-serif;
+  text-transform:Uppercase;
+  font-weight:600;
+  border-radius:5px;
+  cursor:pointer;
+}
+.container .blob{
+    align-items: left;
+    justify-content: left;
+    border-radius: 5% 150% 70% 67% / 60% 55% 100% 1%;
+    width: 250px;
+    height: 810px;
+    background: rgb(23, 164, 49);
+    background-image: linear-gradient(45deg, #23ae99 0%, rgb(5, 78, 5) 100%);
+    box-shadow: -10vmin 10vmin 0 rgba(255,255,255,0.07);
+}
+.exp{
+ visibility:hidden;
+}
+    </style>
+</head>
+<body>
+
+    <div style="display: flex;">
+    <div class="container" style="padding-right: 400px;">
+        <div class="blob">
+        </div>
+    </div>
+    <div class="center" style="padding-top: 100px;">
+        <div class="form-input">
+            <label for="file-ip-1">Upload Image</label>
+            <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+            <div class="preview">
+                <img id="file-ip-1-preview">
+              <center><button style=" font-weight: bolder;
+                position: relative;
+                padding: 15px 25px;
+                border-radius: 30px;
+                color: azure;
+                background-color: rgb(12, 82, 9);" onclick="unhide()" target="_self">Identify Plant</button></center>
+                
+                <div class="exp">
+                    <p style="font-weight: bold;" class="and">PLANT NAME:Euphorbia hirta.<br> ALSO KNOWN AS: Asthma Herb, Dove Milk, Pillpod Sandmat , Snakeweed, Ara tanan, Garden spurge.<br> SPEC:Asthma-plant (Euphorbia hirta) is a ground-hugging spurge weed whose branches can grow to 61 cm long.</p>
+                </div>
+              </div>
+        </div>
+      </div> 
+    </div>
+      <script>
+        
+          function showPreview(event){
+  if(event.target.files.length > 0){
+    var src = URL.createObjectURL(event.target.files[0]);
+    var preview = document.getElementById("file-ip-1-preview");
+    preview.src = src;
+    preview.style.display = "block";
+  }
+}
+function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}
+</script>
+<footer class="footer">
+  <p class="footer__title">Medplant classification</p>
+  <p>Follow us on</p>
+  <div class="footer__social">
+      <a href="https://instagram.com/_princess._.pride_?igshid=MzNlNGNkZWQ4Mg" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+      <a href="https://twitter.com/Abinaya256?t=EZuvYBQ6yE1ij-OIQSW-iA&s=09" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+  </div>
+  <p class="footer__copy">&#169; . All rigths reserved</p>
+</footer>
+ <!--===== SCROLL REVEAL =====-->
+ <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>

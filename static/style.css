@@ -1,0 +1,740 @@
+html{
+  scroll-behavior: smooth;
+}
+.desktop-1,
+.desktop-1 * {
+  box-sizing: border-box;
+  
+}
+.desktop-1 {
+  position: relative;
+  width: 1520px;
+  height: 820px;
+  background: #ffffff;
+  overflow: hidden;
+}
+.ellipse-1 {
+  background: #1a6a31;
+  border-radius: 50%;
+  width: 850px;
+  height: 850px;
+  position: absolute;
+  left: 890px;
+  top: 20px;
+}
+.ellipse-2 {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 39.04944658279419%,
+    rgba(169, 194, 150, 0.12) 55.23138642311096%,
+    rgba(255, 255, 255, 0.12) 68.97733211517334%,
+    rgba(169, 194, 150, 0.12) 88.29125761985779%
+  ),
+  linear-gradient(to left, #2b7a1e, #2b7a1e);
+  border-radius: 50%;
+  width: 750px;
+  height: 750px;
+  position: absolute;
+  left: 1010px;
+  top: 70px;
+}
+.ellipse-5 {
+  background: #1a6a31;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: -43px;
+  top: 660px;
+}
+.ellipse-4 {
+  background: #1d802d;
+  border-radius: 50%;
+  width: 142px;
+  height: 135px;
+  position: absolute;
+  left: 664px;
+  top: 48px;
+}
+.ellipse-6 {
+  background: #1d802d;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 604px;
+  top: 116px;
+}
+.ellipse-8 {
+  background: #1d802d;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  left: 300px;
+  top: 760px;
+}
+.ellipse-7 {
+  background: #1a6a31;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: -19px;
+  top: 600px;
+}
+.medicinal-plants-classification {
+  color: #114d1b;
+  text-align: left;
+  font: 800 64px "Inter", sans-serif;
+  position: absolute;
+  left: 27px;
+  top: 300px;
+  width: 712px;
+  height: 172px;
+
+}
+.fade-in-left {
+  width: 750px;
+  height: 650px;
+  position: absolute;
+  right: 20px;
+  top: 150px;
+}
+.rectangle-1 {
+  background: #1f4425;
+  width: 1520px;
+  height: 90px;
+  position: absolute;
+  top: 0px;
+}
+.ellipse-3 {
+  background: #1d802d;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  left:-15px;
+  top: 690px;
+}
+header {
+  position: absolute;
+  width: 1520px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0 10px;
+}
+
+.navbar {
+  display: flex;
+  padding: 22px 0px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.navbar .hamburger-btn {
+  display: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.navbar .logo {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar .logo img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.navbar .logo h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.navbar .links a {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.1s ease;
+}
+
+.navbar .links a:hover {
+  color: #57ba5b;
+}
+
+.navbar .login-btn {
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #275360;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.navbar .login-btn:hover {
+  background: #ddd;
+}
+@media (max-width: 950px) {
+  .navbar :is(.hamburger-btn, .close-btn) {
+      display: block;
+  }
+
+  .navbar {
+      padding: 15px 0;
+  }
+
+  .navbar .logo img {
+      display: none;
+  }
+
+  .navbar .logo h2 {
+      font-size: 1.4rem;
+  }
+
+  .navbar .links {
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      left: -100%;
+      display: block;
+      height: 100vh;
+      width: 1520px;
+      padding-top: 60px;
+      text-align: center;
+      background: #fff;
+      transition: 0.2s ease;
+  }
+
+  .navbar .links.show-menu {
+      left: 0;
+  }
+
+  .navbar .links a {
+      display: inline-flex;
+      margin: 20px 0;
+      font-size: 1.2rem;
+      color: #000;
+  }
+
+  .navbar .links a:hover {
+      color: #c2ced0;
+  }
+
+  .navbar .login-btn {
+      font-size: 0.9rem;
+      padding: 7px 10px;
+  }
+}
+.form-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  max-width: 720px;
+  background: #fff;
+  border: 2px solid #fff;
+  transform: translate(-50%, -70%);
+}
+
+.show-popup .form-popup {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease, opacity 0.1s;
+}
+
+.form-popup .close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #878484;
+  cursor: pointer;
+}
+
+.blur-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: 0.1s ease;
+}
+
+.show-popup .blur-bg-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.form-popup .form-box {
+  display: flex;
+}
+
+.form-box .form-details {
+  width: 100%;
+  color: #fff;
+  max-width: 330px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .form-details {
+  padding: 0 40px;
+  background: url("/static/small-sprouts-grow_398492-72.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.signup .form-details {
+  padding: 0 20px;
+  background: url("/static/small-sprouts-grow_398492-72.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.form-box .form-content {
+  width: 100%;
+  padding: 35px;
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+form .input-field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-field input {
+  height: 100%;
+  width: 100%;
+  background: none;
+  outline: none;
+  font-size: 0.95rem;
+  padding: 0 15px;
+  border: 1px solid #717171;
+  border-radius: 3px;
+}
+
+.input-field input:focus {
+  border: 1px solid #0d973d;
+}
+
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #4a4646;
+  pointer-events: none;
+  transition: 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) {
+  padding: 16px 15px 0;
+}
+
+.input-field input:is(:focus, :valid)~label {
+  transform: translateY(-120%);
+  color: #0d771d;
+  font-size: 0.75rem;
+}
+
+.form-box a {
+  color: #0a8a13;
+  text-decoration: none;
+}
+
+.form-box a:hover {
+  text-decoration: underline;
+}
+
+form :where(.forgot-pass-link, .policy-text) {
+  display: inline-flex;
+  margin-top: 13px;
+  font-size: 0.95rem;
+}
+
+form button {
+  width: 100%;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 14px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 25px 0;
+  background: #068445;
+  transition: 0.2s ease;
+}
+
+form button:hover {
+  background: #09a939;
+}
+
+.form-content .bottom-link {
+  text-align: center;
+}
+
+.form-popup .signup,
+.form-popup.show-signup .login {
+  display: none;
+}
+
+.form-popup.show-signup .signup {
+  display: flex;
+}
+
+.signup .policy-text {
+  display: flex;
+  margin-top: 14px;
+  align-items: center;
+}
+
+.signup .policy-text input {
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+}
+@media (max-width: 760px) {
+  .form-popup {
+      width: 95%;
+  }
+
+  .form-box .form-details {
+      display: none;
+  }
+
+  .form-box .form-content {
+      padding: 30px 20px;
+  }
+}
+.fade-in-right{
+  opacity: 0;
+  animation: fadeInRight 1s ease-in-out forwards;
+}
+@keyframes fadeInRight {
+  0%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+.fade-in-left{
+  opacity: 0;
+  animation: fadeInLeft 1s ease-in-out forwards;
+}
+@keyframes fadeInLeft {
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  0%{
+    opacity: 0;
+    transform: translatey(-100%);
+}
+
+
+}
+/* ===== FOOTER =====*/
+.footer {
+  background-color:#1f4425; ;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+.footer__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer__social {
+  margin-bottom: 2rem;
+}
+
+.footer__icon {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+.footer__copy {
+  font-size: .75rem;
+}
+.footer{
+  background-color: #1f4425;
+  color: #fff;
+  text-align: center;
+  font-weight:  600;
+  padding: 2rem 0;
+
+  &__title{
+      font-size: 2rem;
+      margin-bottom: 2rem;
+  }
+  &__social{
+      margin-bottom: 2rem;
+  }
+  &__icon{
+      font-size: 1.5rem;
+      color: #fff;
+      margin: 0 1rem;
+  }
+  &__copy{
+      font-size: .75rem;
+  }
+}
+.desktop-2,
+.desktop-2 * {
+  box-sizing: border-box;
+}
+.desktop-2 {
+  background: #305216;
+  width: 1520px;
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+}
+.image-1 {
+  width: 580px;
+  height: 1025px;
+  position: relative;
+  left: 940px;
+  top: 0px;
+}
+.rectangle-2 {
+  background: #467d2c;
+  width: 107.36px;
+  height: 1062.64px;
+  position: absolute;
+  left: 938.86px;
+  top: 1057.31px;
+  transform-origin: 0 0;
+  transform: rotate(-175deg) scale(1, 1);
+}
+.polygon-1 {
+  position: absolute;
+  left: 550px;
+  top: 850px;
+  transform: translate(-972.27px, -92.35px);
+  overflow: visible;
+}
+.group-1 {
+  position: absolute;
+  left: 1.65px;
+  top: 25px;
+  transform: translate(-1.65px, 0px);
+  overflow: visible;
+}
+.about-us {
+  color: #305216;
+  text-align: left;
+  font: 800 48px "Inter", sans-serif;
+  position: absolute;
+  left: 95px;
+  top: 45px;
+}
+.group-2 {
+  position: absolute;
+  row-gap: 2rem;
+  inset: 0;
+}
+.welcome-to-our-project-dedicated-to-the-exciting-field-of-medicinal-plant-classification-through-image-processing-and-machine-learning-algorithms-we-are-a-passionate-team-of-researchers-and-developers-who-share-a-common-goal-to-harness-the-power-of-technology-to-improve-our-understanding-and-utilization-of-nature-s-medicinal-treasures {
+  color: #ffffff;
+  text-align: left;
+  position: absolute;
+  left: 38px;
+  top: 139px;
+  width: 800px;
+}
+.welcome-to-our-project-dedicated-to-the-exciting-field-of-medicinal-plant-classification-through-image-processing-and-machine-learning-algorithms-we-are-a-passionate-team-of-researchers-and-developers-who-share-a-common-goal-to-harness-the-power-of-technology-to-improve-our-understanding-and-utilization-of-nature-s-medicinal-treasures-span {
+  color: #ffffff;
+  font: 800 24px "Inter", sans-serif;
+}
+.welcome-to-our-project-dedicated-to-the-exciting-field-of-medicinal-plant-classification-through-image-processing-and-machine-learning-algorithms-we-are-a-passionate-team-of-researchers-and-developers-who-share-a-common-goal-to-harness-the-power-of-technology-to-improve-our-understanding-and-utilization-of-nature-s-medicinal-treasures-span2 {
+  color: #ffffff;
+  font: 800 20px "Inter", sans-serif;
+}
+.our-mission-our-mission-is-simple-yet-profound-to-contribute-to-the-field-of-medicinal-plant-identification-and-classification-through-cutting-edge-technology-we-believe-that-by-combining-the-knowledge-of-traditional-herbal-medicine-with-modern-computational-techniques-we-can-unlock-new-possibilities-for-healthcare-conservation-and-scientific-research {
+  color: #ffffff;
+  text-align: left;
+  position: absolute;
+  left: 38px;
+  top: 234px;
+  width: 800px;
+  height: 188px;
+}
+.our-mission-our-mission-is-simple-yet-profound-to-contribute-to-the-field-of-medicinal-plant-identification-and-classification-through-cutting-edge-technology-we-believe-that-by-combining-the-knowledge-of-traditional-herbal-medicine-with-modern-computational-techniques-we-can-unlock-new-possibilities-for-healthcare-conservation-and-scientific-research-span {
+  color: #ffffff;
+  font: 800 24px "Inter", sans-serif;
+  padding-bottom: 10px;
+}
+.our-mission-our-mission-is-simple-yet-profound-to-contribute-to-the-field-of-medicinal-plant-identification-and-classification-through-cutting-edge-technology-we-believe-that-by-combining-the-knowledge-of-traditional-herbal-medicine-with-modern-computational-techniques-we-can-unlock-new-possibilities-for-healthcare-conservation-and-scientific-research-span2 {
+  color: #ffffff;
+  font: 800 20px "Inter", sans-serif;
+}
+.why-medicinal-plants-medicinal-plants-have-been-a-vital-source-of-healing-and-wellness-for-centuries-they-offer-a-wealth-of-bioactive-compounds-that-have-the-potential-to-treat-various-ailments-and-improve-human-health-by-accurately-identifying-and-cataloging-these-plants-we-can-facilitate-research-promote-conservation-efforts-and-enhance-the-development-of-herbal-medicines {
+  color: #ffffff;
+  text-align: left;
+  font: 800 20px "Inter", sans-serif;
+  position: absolute;
+  left: 38px;
+  top: 517px;
+  width: 800px;
+  height: 188px;
+}
+/* ===== CONTACT =====*/
+.contact__input {
+  position: relative;
+  width: 1450px;
+  font-size: .938rem;
+  font-weight: 600;
+  padding: 1rem;
+
+  border-radius: .5rem;
+  border: 1.5px solid hsl(224, 56%, 12%);
+  outline: none;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact__button {
+  display: block;
+  border: none;
+  outline: none;
+  font-size: .938rem;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-title h2{
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+.pp{
+  height:10%;
+  width: 100%;
+  background-color: rgb(13, 145, 77);
+}
+.pp button{
+  color:white;
+  font-weight:bolder ;
+  padding: 30px;
+  float: right;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+h1{
+  position: relative;
+color: rgb(4, 43, 4);
+padding-top: 30px;
+padding-bottom: 30px;
+text-align: center;
+}
+.cont{
+padding-top: 30px;
+padding-left: 30px;
+background-color: rgb(219, 223, 212);
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+}
+.img{
+position: relative;
+overflow: hidden;
+}
+.img > img{
+display: block;
+width: 90%;
+aspect-ratio: 1/1;
+padding-bottom: 30px;
+object-fit: cover;
+object-position: center;
+
+}
+.img > .content{
+position: absolute;
+inset: 0;
+font-size: 1rem;
+padding: 1rem;
+background: rgb(6, 97, 59);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.img > img,
+.img > .content{
+transition: 200ms ease-in-out;
+}
+.img:hover > img.blur{
+filter: blur(5px);
+
+}
+.img:hover > img.zoom{
+transform: scale(1.1);
+
+}
+.img > .content.fade{
+opacity: 0;
+}
+.img:hover > .content.fade{
+opacity: 1;
+}   
+.opa{
+
+padding-bottom: 80px;
+}    

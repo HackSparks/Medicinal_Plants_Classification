@@ -1,0 +1,245 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            .pp{
+                height:10%;
+                width: 100%;
+                background-color: rgb(13, 145, 77);
+            }
+            .pp button{
+                color:white;
+                font-weight:bolder ;
+                padding: 30px;
+                float: right;
+                background-color: transparent;
+                cursor: pointer;
+                border: none;
+                outline: none;
+            }
+            h1{
+                position: relative;
+    color: rgb(4, 43, 4);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.cont{
+    padding-top: 30px;
+    padding-left: 30px;
+    background-color: rgb(219, 223, 212);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+}
+.img{
+    position: relative;
+    overflow: hidden;
+}
+.img > img{
+    display: block;
+    width: 90%;
+    aspect-ratio: 1/1;
+    padding-bottom: 30px;
+    object-fit: cover;
+    object-position: center;
+
+}
+.img > .content{
+    position: absolute;
+    inset: 0;
+    font-size: 1rem;
+    padding: 1rem;
+    background: rgb(6, 97, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img > img,
+.img > .content{
+    transition: 200ms ease-in-out;
+}
+.img:hover > img.blur{
+    filter: blur(5px);
+
+}
+.img:hover > img.zoom{
+    transform: scale(1.1);
+
+}
+.img > .content.fade{
+opacity: 0;
+}
+.img:hover > .content.fade{
+opacity: 1;
+}   
+.opa{
+    
+    padding-bottom: 80px;
+}    
+        </style>
+    </head>
+    <body>
+        <div class="opa" style="background-color: #1f4425;">
+        <header>
+           
+            <nav class="navbar">
+                <span class="hamburger-btn material-symbols-rounded">menu</span>
+                <a href="#" class="logo">
+                    <img src="/static/logo.png" alt="">
+                    <h2>Ministry of Ayush</h2>
+                </a>
+                <ul class="links">
+                    <span class="close-btn material-symbols-rounded">close</span>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="/#about">About us</a></li>
+                    <li><a href="/#contact">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+       
+    </div>
+          <div style="background-color: rgb(182, 218, 181);">
+            <h1 style="color:rgb(2, 49, 2)">PLANTS TO KEEP IN OUR HOME</h1>
+         
+          </div>   
+          <div class="cont">
+            <div class="img">
+            <img class="blur" src="/static/tulsi.avif" height="350px" width="33%" class="image">
+            <div class="content fade"><p><b>TULSI</b><br><small>Tulsi is taken as herbal tea.
+                The oil extracted from the Karpoora Tulsi is mostly used in the herbal toiletry. Its oil is also used against insects and bacteria.
+                The Rama Tulsi is an effective remedy for Severe acute Respiratory Syndrome. Juice of its leaves gives relief in cold, fever, bronchitis and cough.
+                Tulsi oil is also used as an ear drop.
+                Tulsi helps in curing malaria.
+                It is very effective against indigestion, headache, hysteria, insomnia, and cholera.</small></p></div>
+          </div>
+            <div class="img">
+            <img class="zoom" src="/static/lavender.avif" height="350px" width="33%">
+            <div class="content fade"><p><b>LAVENDER</b><br><small>Long recognized for its sweet perfume, lavender also boasts medical benefits as a nervine and mild antidepressant. UMMC suggests adding it to your bath to alleviate stress, tension, and insomnia. It's also used in creams to treat sunburns and acne.
+
+                Woody lavender plants prefer hot, sunny, and dry environments. The fresh flowers are tasty in small doses when added to salads, honey, butter, lemonade, and even shortbread cookies. If you’re crafty, try sewing up an herbal heating pad or eye pillow with the fragrant dried flowers.</small></p></div>
+        </div>
+            <div class="img">
+            <img class="blur" src="/static/chamomile.jpg" height="350px" width="33%">
+            <div class="content fade"><p><b>GERMAN CHAMOMILE</b><br><small>Delicate, apple-scented chamomile demonstrates that mildness does not mean ineffectiveness. Primarily grown for its small, yellow-bellied flowers, NCCAM reports that chamomile is one of the best children’s herbs for treating colic, nervous stress, infections, and stomach disorders.</small></p></div>
+    </div>
+            <div class="img">
+            <img  class="zoom" src="/static/aloevera.avif" height="350px" width="33%">
+            <div class="content fade"><p><b>ALOE VERA</b><br><small>Aloe vera is also taken internally in the treatment of :
+
+                1.ulcerative colitis (drinking aloe vera juice)<br>
+                2.chronic constipation<br>
+                3.poor appetite<br>
+                4.digestive problems</small></p></div>
+        </div>
+            <div class="img">
+            <img class="blur" src="/static/gotukala.avif" height="350px" width="33%">
+            <div class="content fade"><p><b>GOTU KALA</b><br><small>The Gotu kola can also be used to :
+
+                1.Treat leprosy<br>
+                2.Revitalize the brain and nervous system<br>
+                3.Increase attention span and concentration<br>
+                4.Treat venous insufficiency</small></p></div>
+        </div>
+            <div class="img">
+            <img class="zoom" src="/static/basil.avif" height="350px" width="33%">
+            <div class="content fade"><p><b>BASIL</b><br><small >Basil has the power to treat
+
+                Cuts,
+                Lack of appetite,
+                Stomach gas,
+                scrapes,.etc</small></p></div>
+          </div>
+          <div class="img">
+            <img class="zoom" src="/static/Ashwagandha-Tree-Plant_480x480.webp" height="350px" width="33%">
+            <div class="content fade"><p><b>ASHWAGANDHA</b><br><small >The benefits of ashwagandha are many; in addition to promoting fertility, aiding in wound care, and boosting the immune system, some other benefits are:
+
+                Diuretic, Sleep aid
+                Galactogogue,
+                Anti-epileptic,
+                Anti-tumor, Pain relief,
+                Eye health,
+                Heart tonic,
+                Lowers cholesterol & Regulates blood sugar.
+                Reduces depression and anxiety, Combats stress,
+                Fights cognitive decline due to brain cell degeneration</small></p></div>
+          </div>
+          <div class="img">
+            <img class="zoom" src="/static/leom balm.avif" height="350px" width="33%">
+            <div class="content fade"><p><b>LEMON BALM</b><br><small >The reason the plant is called lemon balm is because of the lemon minty scent of the leaves. The flowers, which appear during the summer, are full of nectar. The crushed leaves, when rubbed on the skin, are used as :
+
+                mosquito repellent,
+                herpes,
+                sores,
+                gout,
+                insect bites.<br>
+            
+            Infusion of the leaves with water are known to treat :<br>
+            
+                colds,
+                fevers,
+                indigestion due to nervous tension,
+                digestive upsets in children,
+                hyperthyroidism,
+                depression,
+                mild insomnia,
+                headaches,
+            </small></p></div>
+          </div>
+          <div class="img">
+            <img class="zoom" src="/static/peppermint.avif" height="350px" width="33%">
+            <div class="content fade"><p><b>PEPPER MINT</b><br><small >
+                Peppermint is sometimes regarded as 'the world's oldest medicine, with archaeological evidence placing its use at least as far back as ten thousand years ago. Pepeprmint are naturally high in manganese, vitamin A and vitamin C. Crushed leaves rubbed on the skin help soothe and relax the muscles. Infused peppermint leaves are used to :<br>
+                
+                    reduce irritable bower syndrome,
+                    against upset stomachs,
+                    inhibit bacterial growth,
+                    treat fevers,
+                    flatulence,
+                    spastic colon.
+                </small></p></div>
+          </div>
+          <div class="img">
+            <img class="zoom" src="/static/rosemary.avif" height="350px" width="33%">
+            <div class="content fade"><p><b>ROSEMARY</b><br><small >Rosemary
+                is the great reviver. This perennial woody herb stimulates energy and optimism and sharpens memory and concentration by bringing more oxygen to your brain, according to UMMC. It's a wonderfully stimulating alternative to caffeine when you need that second wind!
+                
+                A row of these long-lived and drought-tolerant plants makes a beautiful, bee-friendly, evergreen hedge. You may only need one plant in your garden, as a little bit goes a long way.</small></p></div>
+          </div>
+          <div class="img">
+            <img class="zoom" src="/static/calendula.avif" height="350px" width="33%">
+            <div class="content fade"><p><b>CALENDULA</b><br><small >Calendula grows in almost any type of soil condition. It has no problem with nutritionally poor, very acidic or very alkaline soils, just as long as it’s moist. Well known as a remedy for skin problems, the deep-orange flowered pot marigold variety is applied externally to :
+                bites,stings,wounds,sore eyes,varicose veins.
+                Internally it is used to treat fevers and chronic infections.
+                The tea of the petals tones up circulation and, taken regularly, eases varicose veins.
+                Applying the crushed stems of the pot marigold to corns and warts will soon have them easily removable.
+            </small></p></div>
+          </div>
+          <div class="img">
+            <img class="zoom" src="/static/nurserylive-thime_large.webp" height="350px" width="33%">
+            <div class="content fade"><p><b>THYME</b><br><small >It is mostly known for its strong antiseptic nature. It is wonderful when it comes to the treatment of:
+
+                Congestion,
+                Stomach gas,
+                Coughs
+            </small></p></div>
+          </div>
+        </div>
+        <footer class="footer">
+            <p class="footer__title">Medplant classification</p>
+            <p>Follow us on</p>
+            <div class="footer__social">
+                <a href="https://instagram.com/_princess._.pride_?igshid=MzNlNGNkZWQ4Mg" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/Abinaya256?t=EZuvYBQ6yE1ij-OIQSW-iA&s=09" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; . All rigths reserved</p>
+        </footer>
+           <!--===== SCROLL REVEAL =====-->
+           <script src="https://unpkg.com/scrollreveal"></script>
+    </body>
+</html>
