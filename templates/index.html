@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+
+<!-- =====BOX ICONS===== -->
+<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <title>Document</title>
+   
+  </head>
+  <body>
+
+    <div class="desktop-1">
+      <div class="ellipse-1"></div>
+      <div class="ellipse-2"></div>
+      <div class="ellipse-4"></div>
+     
+      <div class="ellipse-5"></div>
+      <div class="ellipse-6"></div>
+      <div class="ellipse-7"></div>
+      <div class="ellipse-8"></div>
+      <div class="ellipse-3"></div>
+      <div class="fade-in-right">
+      <div class="medicinal-plants-classification">
+        MEDICINAL PLANTS<br />CLASSIFICATION <br>
+        <h2 style="color: green; font-size: x-large; font-weight: bold; padding-left: 200px;">Click here to identify a plant</h2>
+       <div style="padding-left: 280px;">
+       <button style=" font-weight: bold;
+        font-size: medium;
+        padding: 15px 25px;
+        border-radius: 30px;
+        color: azure;
+        background-color: rgb(16, 111, 12);"; onclick="document.location='/classify'" target="_self">Identify</button></div>
+      </div>
+      </div>
+
+    </div>
+   
+      <img
+        class="fade-in-left"
+        src="/static/Daco_4896111.png"
+      />
+      <div class="rectangle-1">
+            
+    <header>
+      <nav class="navbar">
+          <span class="hamburger-btn material-symbols-rounded">menu</span>
+          <a href="https://ayush.gov.in" class="logo">
+              <img src="/static/logo.png" alt="">
+              <h2>Ministry of Ayush</h2>
+              
+          </a>
+          <ul class="links">
+              <span class="close-btn material-symbols-rounded">close</span>
+              <li><a href="/">Home</a></li>
+              <li><a href="#images">Gallery</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="">Feedback</a></li>
+              <li><a href="#contact">Contact us</a></li>
+          </ul>
+          <button class="login-btn">LOG IN</button>
+      </nav>
+  </header>
+      </div>
+      <div class="blur-bg-overlay"></div>
+      <div class="form-popup">
+          <span class="close-btn material-symbols-rounded">close</span>
+          <div class="form-box login">
+              <div class="form-details">
+                  <h2>Welcome Back</h2>
+                  <p>Please log in using your personal information to stay connected with us.</p>
+              </div>
+              <div class="form-content">
+                  <h2>LOGIN</h2>
+                  <form action="#">
+                      <div class="input-field">
+                          <input type="text" required>
+                          <label>Email</label>
+                      </div>
+                      <div class="input-field">
+                          <input type="password" required>
+                          <label>Password</label>
+                      </div>
+                      <a href="#" class="forgot-pass-link">Forgot password?</a>
+                      <button type="submit">Log In</button>
+                  </form>
+                  <div class="bottom-link">
+                      Don't have an account?
+                      <a href="#" id="signup-link">Signup</a>
+                  </div>
+              </div>
+          </div>
+          <div class="form-box signup">
+              <div class="form-details">
+                  <h2>Create Account</h2>
+                  <p>To become a part of our community, please sign up using your personal information.</p>
+              </div>
+              <div class="form-content">
+                  <h2>SIGNUP</h2>
+                  <form action="#">
+                      <div class="input-field">
+                          <input type="text" required>
+                          <label>Enter your email</label>
+                      </div>
+                      <div class="input-field">
+                          <input type="password" required>
+                          <label>Create password</label>
+                      </div>
+                      <div class="policy-text">
+                          <input type="checkbox" id="policy">
+                          <label for="policy">
+                              I agree the
+                              <a href="#" class="option">Terms & Conditions</a>
+                          </label>
+                      </div>
+                      <button type="submit">Sign Up</button>
+                  </form>
+                  <div class="bottom-link">
+                      Already have an account? 
+                      <a href="home.html" id="login-link">Login</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div id="about">
+      <div class="desktop-2">
+        <img class="image-1" src="/static/medplant.jpg" />
+        <div class="rectangle-2"></div>
+        <svg
+          class="polygon-1"
+          width="1427"
+          height="439"
+          viewBox="0 0 1427 439"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1410.82 293.676L350.912 307.25L377.67 56.6306L1410.82 293.676Z"
+            fill="#F5F5F5"
+          />
+        </svg>
+  
+        <svg
+          class="group-1"
+          width="519"
+          height="116"
+          viewBox="0 0 519 116"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.48798 10.2948L464.477 7.05917L465.036 87.0572L2.04705 90.2928L1.48798 10.2948Z"
+            fill="#F5F5F5"
+          />
+          <path
+            d="M465.459 8.59681L509.881 86.5822L423.437 87.9013L465.459 8.59681Z"
+            fill="#F5F5F5"
+          />
+        </svg>
+  
+        <div class="about-us">About us</div>
+        <div class="group-2">
+          <div
+            class="welcome-to-our-project-dedicated-to-the-exciting-field-of-medicinal-plant-classification-through-image-processing-and-machine-learning-algorithms-we-are-a-passionate-team-of-researchers-and-developers-who-share-a-common-goal-to-harness-the-power-of-technology-to-improve-our-understanding-and-utilization-of-nature-s-medicinal-treasures"
+          >
+            <span
+              ><span
+                class="welcome-to-our-project-dedicated-to-the-exciting-field-of-medicinal-plant-classification-through-image-processing-and-machine-learning-algorithms-we-are-a-passionate-team-of-researchers-and-developers-who-share-a-common-goal-to-harness-the-power-of-technology-to-improve-our-understanding-and-utilization-of-nature-s-medicinal-treasures-span"
+                ><br /></span
+              ><span
+                class="welcome-to-our-project-dedicated-to-the-exciting-field-of-medicinal-plant-classification-through-image-processing-and-machine-learning-algorithms-we-are-a-passionate-team-of-researchers-and-developers-who-share-a-common-goal-to-harness-the-power-of-technology-to-improve-our-understanding-and-utilization-of-nature-s-medicinal-treasures-span2"
+                >Welcome to our project dedicated to the exciting field of
+                medicinal plant classification through image processing and
+                machine learning algorithms. We are a passionate team of
+                researchers and developers who share a common goal - to harness
+                the power of technology to improve our understanding and
+                utilization of nature&#039;s medicinal treasures.</span
+              ></span
+            >
+          </div>
+          <div
+            class="our-mission-our-mission-is-simple-yet-profound-to-contribute-to-the-field-of-medicinal-plant-identification-and-classification-through-cutting-edge-technology-we-believe-that-by-combining-the-knowledge-of-traditional-herbal-medicine-with-modern-computational-techniques-we-can-unlock-new-possibilities-for-healthcare-conservation-and-scientific-research"
+          >
+            <span
+              ><span
+                class="our-mission-our-mission-is-simple-yet-profound-to-contribute-to-the-field-of-medicinal-plant-identification-and-classification-through-cutting-edge-technology-we-believe-that-by-combining-the-knowledge-of-traditional-herbal-medicine-with-modern-computational-techniques-we-can-unlock-new-possibilities-for-healthcare-conservation-and-scientific-research-span"
+                ><br /><br /><br /></span
+              ><span
+                class="our-mission-our-mission-is-simple-yet-profound-to-contribute-to-the-field-of-medicinal-plant-identification-and-classification-through-cutting-edge-technology-we-believe-that-by-combining-the-knowledge-of-traditional-herbal-medicine-with-modern-computational-techniques-we-can-unlock-new-possibilities-for-healthcare-conservation-and-scientific-research-span2"
+                ><br>Our Mission<br /><br />Our mission is simple yet profound: to
+                contribute to the field of medicinal plant identification and
+                classification through cutting-edge technology. We believe that by
+                combining the knowledge of traditional herbal medicine with modern
+                computational techniques, we can unlock new possibilities for
+                healthcare, conservation, and scientific research.</span
+              ></span
+            >
+          </div>
+          <div
+            class="why-medicinal-plants-medicinal-plants-have-been-a-vital-source-of-healing-and-wellness-for-centuries-they-offer-a-wealth-of-bioactive-compounds-that-have-the-potential-to-treat-various-ailments-and-improve-human-health-by-accurately-identifying-and-cataloging-these-plants-we-can-facilitate-research-promote-conservation-efforts-and-enhance-the-development-of-herbal-medicines"
+          >
+           <br><br> Why Medicinal Plants?<br /><br />Medicinal plants have been a vital
+            source of healing and wellness for centuries. They offer a wealth of
+            bioactive compounds that have the potential to treat various ailments
+            and improve human health. By accurately identifying and cataloging
+            these plants, we can facilitate research, promote conservation
+            efforts, and enhance the development of herbal medicines
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background-color: rgb(182, 218, 181);">
+      <h1 style="color:rgb(2, 49, 2)">PLANTS TO KEEP IN OUR HOME</h1>
+   
+    </div>   
+    <div id="images">
+    <div class="cont">
+      <div class="img">
+      <img class="blur" src="/static/tulsi.avif" height="350px" width="33%" class="image">
+      <div class="content fade"><p><b>TULSI</b><br><small>Tulsi is taken as herbal tea.
+          The oil extracted from the Karpoora Tulsi is mostly used in the herbal toiletry. Its oil is also used against insects and bacteria.
+          The Rama Tulsi is an effective remedy for Severe acute Respiratory Syndrome. Juice of its leaves gives relief in cold, fever, bronchitis and cough.
+          Tulsi oil is also used as an ear drop.
+          Tulsi helps in curing malaria.
+          It is very effective against indigestion, headache, hysteria, insomnia, and cholera.</small></p></div>
+    </div>
+      <div class="img">
+      <img class="zoom" src="/static/lavender.avif" height="350px" width="33%">
+      <div class="content fade"><p><b>LAVENDER</b><br><small>Long recognized for its sweet perfume, lavender also boasts medical benefits as a nervine and mild antidepressant. UMMC suggests adding it to your bath to alleviate stress, tension, and insomnia. It's also used in creams to treat sunburns and acne.
+
+          Woody lavender plants prefer hot, sunny, and dry environments. The fresh flowers are tasty in small doses when added to salads, honey, butter, lemonade, and even shortbread cookies. If you’re crafty, try sewing up an herbal heating pad or eye pillow with the fragrant dried flowers.</small></p></div>
+  </div>
+      <div class="img">
+      <img class="blur" src="/static/chamomile.jpg" height="350px" width="33%">
+      <div class="content fade"><p><b>GERMAN CHAMOMILE</b><br><small>Delicate, apple-scented chamomile demonstrates that mildness does not mean ineffectiveness. Primarily grown for its small, yellow-bellied flowers, NCCAM reports that chamomile is one of the best children’s herbs for treating colic, nervous stress, infections, and stomach disorders.</small></p></div>
+</div>
+      <div class="img">
+      <img  class="zoom" src="/static/aloevera.avif" height="350px" width="33%">
+      <div class="content fade"><p><b>ALOE VERA</b><br><small>Aloe vera is also taken internally in the treatment of :
+
+          1.ulcerative colitis (drinking aloe vera juice)<br>
+          2.chronic constipation<br>
+          3.poor appetite<br>
+          4.digestive problems</small></p></div>
+  </div>
+      <div class="img">
+      <img class="blur" src="/static/gotukala.avif" height="350px" width="33%">
+      <div class="content fade"><p><b>GOTU KALA</b><br><small>The Gotu kola can also be used to :
+
+          1.Treat leprosy<br>
+          2.Revitalize the brain and nervous system<br>
+          3.Increase attention span and concentration<br>
+          4.Treat venous insufficiency</small></p></div>
+  </div>
+      <div class="img">
+      <img class="zoom" src="/static/basil.avif" height="350px" width="33%">
+      <div class="content fade"><p><b>BASIL</b><br><small >Basil has the power to treat
+
+          Cuts,
+          Lack of appetite,
+          Stomach gas,
+          scrapes,.etc</small></p></div>
+    </div>
+    <div class="img">
+      <img class="zoom" src="/static/Ashwagandha-Tree-Plant_480x480.webp" height="350px" width="33%">
+      <div class="content fade"><p><b>ASHWAGANDHA</b><br><small >The benefits of ashwagandha are many; in addition to promoting fertility, aiding in wound care, and boosting the immune system, some other benefits are:
+
+          Diuretic, Sleep aid
+          Galactogogue,
+          Anti-epileptic,
+          Anti-tumor, Pain relief,
+          Eye health,
+          Heart tonic,
+          Lowers cholesterol & Regulates blood sugar.
+          Reduces depression and anxiety, Combats stress,
+          Fights cognitive decline due to brain cell degeneration</small></p></div>
+    </div>
+    <div class="img">
+      <img class="zoom" src="/static/leom balm.avif" height="350px" width="33%">
+      <div class="content fade"><p><b>LEMON BALM</b><br><small >The reason the plant is called lemon balm is because of the lemon minty scent of the leaves. The flowers, which appear during the summer, are full of nectar. The crushed leaves, when rubbed on the skin, are used as :
+
+          mosquito repellent,
+          herpes,
+          sores,
+          gout,
+          insect bites.<br>
+      
+      Infusion of the leaves with water are known to treat :<br>
+      
+          colds,
+          fevers,
+          indigestion due to nervous tension,
+          digestive upsets in children,
+          hyperthyroidism,
+          depression,
+          mild insomnia,
+          headaches,
+      </small></p></div>
+    </div>
+    <div class="img">
+      <img class="zoom" src="/static/peppermint.avif" height="350px" width="33%">
+      <div class="content fade"><p><b>PEPPER MINT</b><br><small >
+          Peppermint is sometimes regarded as 'the world's oldest medicine, with archaeological evidence placing its use at least as far back as ten thousand years ago. Pepeprmint are naturally high in manganese, vitamin A and vitamin C. Crushed leaves rubbed on the skin help soothe and relax the muscles. Infused peppermint leaves are used to :<br>
+          
+              reduce irritable bower syndrome,
+              against upset stomachs,
+              inhibit bacterial growth,
+              treat fevers,
+              flatulence,
+              spastic colon.
+          </small></p></div>
+    </div>
+    <div class="img">
+      <img class="zoom" src="/static/rosemary.avif" height="350px" width="33%">
+      <div class="content fade"><p><b>ROSEMARY</b><br><small >Rosemary
+          is the great reviver. This perennial woody herb stimulates energy and optimism and sharpens memory and concentration by bringing more oxygen to your brain, according to UMMC. It's a wonderfully stimulating alternative to caffeine when you need that second wind!
+          
+          A row of these long-lived and drought-tolerant plants makes a beautiful, bee-friendly, evergreen hedge. You may only need one plant in your garden, as a little bit goes a long way.</small></p></div>
+    </div>
+    <div class="img">
+      <img class="zoom" src="/static/calendula.avif" height="350px" width="33%">
+      <div class="content fade"><p><b>CALENDULA</b><br><small >Calendula grows in almost any type of soil condition. It has no problem with nutritionally poor, very acidic or very alkaline soils, just as long as it’s moist. Well known as a remedy for skin problems, the deep-orange flowered pot marigold variety is applied externally to :
+          bites,stings,wounds,sore eyes,varicose veins.
+          Internally it is used to treat fevers and chronic infections.
+          The tea of the petals tones up circulation and, taken regularly, eases varicose veins.
+          Applying the crushed stems of the pot marigold to corns and warts will soon have them easily removable.
+      </small></p></div>
+    </div>
+    <div class="img">
+      <img class="zoom" src="/static/nurserylive-thime_large.webp" height="350px" width="33%">
+      <div class="content fade"><p><b>THYME</b><br><small >It is mostly known for its strong antiseptic nature. It is wonderful when it comes to the treatment of:
+
+          Congestion,
+          Stomach gas,
+          Coughs
+      </small></p></div>
+    </div>
+  </div>
+</div>
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact us</h2>
+
+      <div class="contact__container bd-grid">
+          <form action="https://formspree.io/f/xzblerag" method="post" class="contact__form">
+              <input type="text" id="name" name="name" placeholder="Name" class="contact__input">
+              <input type="email" name="email" placeholder="Email" id="mail" class="contact__input">
+              <input type="tel" id="" name="phone" placeholder="Mobile" pattern="[6-9]{1}[0-9]{9}" class="contact__input">
+              <textarea name="message" id="" placeholder="Message" cols="0" rows="10" class="contact__input"></textarea>
+              <button type="submit" value="Contact"  class="contact__button button">Contact</button>
+          </form>
+      </div>
+  </section>
+</main>
+
+    <footer class="footer">
+        <p class="footer__title">Medplant classification</p>
+        <p>Follow us on</p>
+        <div class="footer__social">
+             <a href="https://www.facebook.com/moayush" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://instagram.com/ministryofayush?igshid=MWZjMTM2ODFkZg" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://x.com/moayush?s=20" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+        </div>
+        <p class="footer__copy">&#169; . All rigths reserved</p>
+    </footer>
+       <!--===== SCROLL REVEAL =====-->
+       <script src="https://unpkg.com/scrollreveal"></script>
+       <script>
+        const navbarMenu = document.querySelector(".navbar .links");
+const hamburgerBtn = document.querySelector(".hamburger-btn");
+const hideMenuBtn = navbarMenu.querySelector(".close-btn");
+const showPopupBtn = document.querySelector(".login-btn");
+const formPopup = document.querySelector(".form-popup");
+const hidePopupBtn = formPopup.querySelector(".close-btn");
+const signupLoginLink = formPopup.querySelectorAll(".bottom-link a");
+
+// Show mobile menu
+hamburgerBtn.addEventListener("click", () => {
+    navbarMenu.classList.toggle("show-menu");
+});
+
+// Hide mobile menu
+hideMenuBtn.addEventListener("click", () =>  hamburgerBtn.click());
+
+// Show login popup
+showPopupBtn.addEventListener("click", () => {
+    document.body.classList.toggle("show-popup");
+});
+
+// Hide login popup
+hidePopupBtn.addEventListener("click", () => showPopupBtn.click());
+
+// Show or hide signup form
+signupLoginLink.forEach(link => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+        formPopup.classList[link.id === 'signup-link' ? 'add' : 'remove']("show-signup");
+    });
+});
+    </script>
+  </body>
+</html>
